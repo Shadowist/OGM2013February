@@ -1,4 +1,4 @@
-Just a place holder until things start moving =]
+A simple Pong clone in Unity =]
 
 Contact: stevencburrichter@gmail.com
 Twitter: https://twitter.com/TheShadowist

@@ -1,3 +1,17 @@
+/* PongBall.cs
+ * 
+ * Author: Steven Burrichter
+ * 
+ * Information:
+ * This controls the ball ala pong style. When it hits an object, 
+ * it simply reflects the velocity using the contact point's
+ * normal.
+ * 
+ * This will be more complex later =]
+ * 
+ * Attach this to the pong ball!
+ */
+
 using UnityEngine;
 using System.Collections;
 
@@ -6,8 +20,9 @@ public class PongBall : MonoBehaviour {
 	
 	public float Acceleration = 100.0f;
 	public float maxSpeed = 10.0f;
+	public float playerMultiplier = 2.0f;
 	private Vector3 setVelocity = new Vector3(0,0,0);
-     private Rigidbody controller;
+    private Rigidbody controller;
 
 	// Use this for initialization
 	void Start () {

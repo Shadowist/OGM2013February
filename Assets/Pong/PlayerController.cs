@@ -1,3 +1,17 @@
+/* PlayerController.cs
+ * 
+ * Author: Steven Burrichter
+ * 
+ * Information:
+ * This is a simple player controller. I decided on using
+ * RigidBodies in case I want the paddles to interact with the game environment.
+ * The public variables are adjustable. Use the movementMultiplier in conjuction
+ * with the rigidbody mass to find a nice sweet spot for the game. Use moveSpeed
+ * to fine tune!
+ * 
+ * Attach this to the player objects!
+ */
+
 using UnityEngine;
 using System.Collections;
 

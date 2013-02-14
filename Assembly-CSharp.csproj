@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\Base\Camera\LookAt.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\MouseLook.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\MouseLookScreenBase.cs" />
-     <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerGoal.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerWeapon.cs" />
      <Compile Include="Assets\Scripts\Base\GUI\DrawCrosshair.cs" />

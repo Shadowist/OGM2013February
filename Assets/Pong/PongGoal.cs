@@ -1,3 +1,15 @@
+/* PongGoal.cs
+ * 
+ * Author: Steven Burrichter
+ * 
+ * Information:
+ * This detects collisions against the attached gameObject.
+ * In reference to the game, it'll find the GameController GameObject,
+ * find the PongGameControl script, and increment scores =]
+ * 
+ * Attach this to the player's goals (or trigger area)!
+ */
+
 using UnityEngine;
 using System.Collections;
 

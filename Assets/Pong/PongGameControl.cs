@@ -1,3 +1,15 @@
+/* PongGameControl.cs
+ * 
+ * Author: Steven Burrichter
+ * 
+ * Information:
+ * This is a basic game controller script. Other scripts
+ * can search for this centralized script and activate
+ * various functions to advance gameplay.
+ * 
+ * Attach this to an empty GameObject and name it "GameController"!
+ */
+
 using UnityEngine;
 using System.Collections;
 
