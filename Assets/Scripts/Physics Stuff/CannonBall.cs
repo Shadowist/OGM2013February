@@ -9,7 +9,7 @@ public class CannonBall : MonoBehaviour {
 	
 	private float timeDelay = 1f;
 	//private float timeOut = 3f;
-	private double lastInterval;
+	private double lastInterval = 0;
 	private float timeNow;
 	
 	private string statusLine;

@@ -15,7 +15,7 @@ public class TimeOut : MonoBehaviour {
 	
 	public float timeFade = 5f;
 	public float timeOut = 10f;
-	private double lastInterval;
+	private double lastInterval = 0;
 	private float timeNow;
 	
 	private Color tempColor;

@@ -25,7 +25,6 @@ public class PongBall : MonoBehaviour {
 	void Update () {
 		if(Vector3.SqrMagnitude(controller.velocity) < maxSpeed)
 			controller.AddForce(setVelocity*Acceleration*Time.deltaTime);
-          Debug.Log(setVelocity);
 	}
 	
 	void RandomizeXZVelocity(){

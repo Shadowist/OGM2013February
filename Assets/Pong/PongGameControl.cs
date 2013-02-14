@@ -22,11 +22,11 @@ public class PongGameControl : MonoBehaviour {
           }
 	}
 
-     void IncPlayer1Score() { player1Score++; }
-     void DecPlayer1Score() { player1Score--; }
-     void ResetPlayer1Score() { player1Score = 0; }
+     public void IncPlayer1Score() { player1Score++; }
+     public void DecPlayer1Score() { player1Score--; }
+     public void ResetPlayer1Score() { player1Score = 0; }
 
-     void IncPlayer2Score() { player2Score++; }
-     void DecPlayer2Score() { player2Score--; }
-     void ResetPlayer2Score() { player2Score = 0; }
+     public void IncPlayer2Score() { player2Score++; }
+     public void DecPlayer2Score() { player2Score--; }
+     public void ResetPlayer2Score() { player2Score = 0; }
 }

@@ -26,8 +26,6 @@ public class MouseLook:MonoBehaviour{
 	public GameObject projectile;
 	
 	//Directional controls
-	float rotationY = -90f;
-	float rotationZ = 0f; //Seperate from aimDirection
 	Quaternion originalRotation;
 	private float opposite;
 	private float adjacent;

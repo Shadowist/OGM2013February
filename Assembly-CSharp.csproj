@@ -44,10 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Pong\PlayerController.cs" />
+     <Compile Include="Assets\Pong\PongBall.cs" />
+     <Compile Include="Assets\Pong\PongGameControl.cs" />
+     <Compile Include="Assets\Pong\PongGoal.cs" />
      <Compile Include="Assets\Scripts\Base\Camera\CameraLateralFollow.cs" />
      <Compile Include="Assets\Scripts\Base\Camera\LookAt.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\MouseLook.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\MouseLookScreenBase.cs" />
+     <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerGoal.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Base\CharacterMovement\PlayerWeapon.cs" />
      <Compile Include="Assets\Scripts\Base\GUI\DrawCrosshair.cs" />
@@ -59,8 +64,6 @@
      <Compile Include="Assets\Scripts\Interactive Stuff\TypesOfTriggers\AreaTrigger.cs" />
      <Compile Include="Assets\Scripts\Physics Stuff\CannonBall.cs" />
      <Compile Include="Assets\Scripts\Physics Stuff\TimeOut.cs" />
-     <Compile Include="Assets\Scripts\Pong\PongBall.cs" />
-     <Compile Include="Assets\Scripts\Pong\PongGameControl.cs" />
      <Compile Include="Assets\Scripts\Utilities\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\Utilities\RELOAD_LEVEL.cs" />
   </ItemGroup>

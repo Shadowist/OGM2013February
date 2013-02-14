@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SparkBehavior : MonoBehaviour {
 	private float TimeDelay = 2.0f;
-	private double LastInterval;
+	private double LastInterval = 0;
 	private float TimeNow;
 	
 	// Use this for initialization
