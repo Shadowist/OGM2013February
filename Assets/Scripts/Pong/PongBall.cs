@@ -7,24 +7,32 @@ public class PongBall : MonoBehaviour {
 	public float Acceleration = 100.0f;
 	public float maxSpeed = 10.0f;
 	private Vector3 setVelocity = new Vector3(0,0,0);
-	
+     private Rigidbody controller;
+
 	// Use this for initialization
 	void Start () {
+          if (!gameObject.GetComponent<Rigidbody>()) {
+               gameObject.AddComponent<Rigidbody>();
+          } else {
+               controller = rigidbody;
+          }
+
 		RandomizeXZVelocity();
-		rigidbody.AddForce(setVelocity*Acceleration*Time.deltaTime);
-		
+		controller.AddForce(setVelocity*Acceleration*Time.deltaTime);
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-		if(Vector3.SqrMagnitude(setVelocity) < maxSpeed)
-			rigidbody.AddForce(setVelocity*Acceleration*Time.deltaTime);
+	void Update () {
+		if(Vector3.SqrMagnitude(controller.velocity) < maxSpeed)
+			controller.AddForce(setVelocity*Acceleration*Time.deltaTime);
+          Debug.Log(setVelocity);
 	}
 	
 	void RandomizeXZVelocity(){
 		while(setVelocity == Vector3.zero){
-			setVelocity.x = Random.Range(5,10);
-			setVelocity.z = Random.Range(5,10);
+			setVelocity.x = Random.Range(-10,10);
+               setVelocity.y = 0;
+			setVelocity.z = Random.Range(-10,10);
 		}
 	}
 	

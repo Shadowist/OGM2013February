@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -59,7 +59,8 @@
      <Compile Include="Assets\Scripts\Interactive Stuff\TypesOfTriggers\AreaTrigger.cs" />
      <Compile Include="Assets\Scripts\Physics Stuff\CannonBall.cs" />
      <Compile Include="Assets\Scripts\Physics Stuff\TimeOut.cs" />
-     <Compile Include="Assets\Scripts\PongBall.cs" />
+     <Compile Include="Assets\Scripts\Pong\PongBall.cs" />
+     <Compile Include="Assets\Scripts\Pong\PongGameControl.cs" />
      <Compile Include="Assets\Scripts\Utilities\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\Utilities\RELOAD_LEVEL.cs" />
   </ItemGroup>
