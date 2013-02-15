@@ -39,14 +39,16 @@ public class PongGoal : MonoBehaviour {
 	void OnCollisionEnter (Collision col) {
 		Debug.Log ("Collision detected!");
 		
-		if(col.gameObject.name == "PongBall"){
+		if(col.gameObject.name == "PongBallPrefab(Clone)"){
 			Debug.Log ("Ball hit a goal!");
 			
 			if(gameObject.name == "Player1Goal"){
 				toGameController.IncPlayer2Score();
+				toGameController.ResetBall();
 				Debug.Log ("Player 2 scores!");
 			} else if(gameObject.name == "Player2Goal") {
 				toGameController.IncPlayer1Score();
+				toGameController.ResetBall();
 				Debug.Log ("Player 1 scores!");
 			}
 		}

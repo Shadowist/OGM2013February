@@ -19,7 +19,7 @@ using System.Collections;
 public class PongBall : MonoBehaviour {
 	
 	public float Acceleration = 100.0f;
-	public float maxSpeed = 10.0f;
+	public float maxSpeed = 50.0f;
 	public float playerMultiplier = 2.0f;
 	private Vector3 setVelocity = new Vector3(0,0,0);
     private Rigidbody controller;
@@ -46,7 +46,7 @@ public class PongBall : MonoBehaviour {
 		while(setVelocity == Vector3.zero){
 			setVelocity.x = Random.Range(-10,10);
                setVelocity.y = 0;
-			setVelocity.z = Random.Range(-10,10);
+			setVelocity.z = Random.Range(-2,2);
 		}
 	}
 	
